@@ -37,10 +37,21 @@ promotion premise; #3's turn is a shrug rather than a punchline.
 - NOT bundled, NOT submitted — awaiting Joni's 'Setuju' on the exact entry.
 
 ## Test results
-- (filled after first run)
+- `python3 -m unittest discover -s tests -v`: 5/5 OK (one line ≤200 chars,
+  no trailing blank line, byte-identical reruns, mode 0644, stdlib only).
+- Joke: 91 chars; file 92 bytes incl. trailing newline; sha256
+  c045894989977c0647fec6fd311aba767bfa257995fda1d9c88ac162b004e96a (identical
+  across 2 runs).
 
 ## Kit check result
-- (filled after first run)
+- `node cli/makefun.mjs check` (fresh kit, level 40): 4 passed, 1 failed,
+  14 skipped, 5 checked at submission.
+- Passed: competition_open, snapshot, license_osi, entrypoint.
+- Failed: transcripts_present only — expected pre-bundle; the bundle is
+  made later by the top-level agent.
+- At-submission checks (repo_public, repo_owner, repo_created_after_open,
+  commit_in_repo, duplicate_snapshot) are verified at submit time; repo is
+  public, created after opening, commit pushed.
 
 ## Live score / rank
 - Blind rounds: no live score until results. (Fill after submit + rounds.)
