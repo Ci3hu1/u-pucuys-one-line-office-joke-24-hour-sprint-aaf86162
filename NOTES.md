@@ -34,7 +34,7 @@ promotion premise; #3's turn is a shrug rather than a punchline.
 - Tests: `python3 -m unittest discover -s tests -v` — 5 tests (see below).
 - Kit check: `node cli/makefun.mjs check` from the fresh kit — see below.
 - Repo: https://github.com/Ci3hu1/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162
-- NOT bundled, NOT submitted — awaiting Joni's 'Setuju' on the exact entry.
+- SUBMITTED 24 Nov 2026 ~13:26 WIB on Joni's "Setuju semua": entry commit 3ecda213aa7c3f908b0c48718ff62e0f6b51303f (HEAD, notes commit on top of entry 33fd062), main, pushed, ls-remote verified. Bundle ~/workspace/tools/makefun/bundles/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162.tar.gz, sha256 d57b4787f6de4536dfbd624e872c0a627f653994c76cb8997b9bbb98fa5774a7 (155,794 B; builder session 74d993f7, 1 usage row). Kit check ok=true, failed=[]. Submission 01a20c3b-808d-70ce-96d4-1e4e20be8394, stage submitted (grading queue behind at submit). Blind 3 rounds, counts from round 1 (cutoff 24 Nov 13:51:04 UTC / 20:51 WIB). Claim code saved only to ~/.config/makefun/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162-submission.json (0600).
 
 ## Test results
 - `python3 -m unittest discover -s tests -v`: 5/5 OK (one line ≤200 chars,
