@@ -63,4 +63,10 @@ promotion premise; #3's turn is a shrug rather than a punchline.
 - Changes: JOKE swapped; added validate() (1-200 chars, not blank, one line, no control chars, at least one letter/digit) + read-back self-check + ENTRY_OUTPUT env; 3 new tests (8/8 pass).
 - Entry commit 276d04709f4ebd7223846777f17b875400287ad7, main, pushed, ls-remote verified.
 - Bundle ~/workspace/tools/makefun/bundles/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162-v2.tar.gz (253,899 B; sessions 74d993f7 + fix session 3c575f98, 1 usage row — the v1 builder's; fix session's row attaches on re-bundle before submit).
-- Kit check ok=true, failed=[] (fresh kit level 42; reproduces 203/219 = 92.6%, revised pass (3 messages), in_window pass, priced pass). NOT submitted — awaiting Joni's 'Setuju' on this exact v2.
+- Kit check ok=true, failed=[] (fresh kit level 42; reproduces 203/219 = 92.6%, revised pass (3 messages), in_window pass, priced pass).
+
+## v2 submitted (25 Nov 2026 ~10:54 WIB, on Joni's "Setuju, submit ketiganya")
+- Submission 01a210d6-6b05-72ba-9d21-b573c5c1bfa1, entry commit 276d04709f4ebd7223846777f17b875400287ad7 (v2, unchanged), round 2 — counts from round 3 of 3, the final at the deadline (25 Nov 12:50 WIB). Previous submission 01a20c3b preserved as previous_submission_id.
+- Re-bundle before submit: usage file ~/.makefun/muse-usage-office-joke.jsonl now 2 rows (v1 builder 74d993f7 + v2 builder 3c575f98); bundle u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162-v2r.tar.gz (260,142 B, sha256 b5dac3b2938e838b8b8cb24f46d5d751cffb13ca7a24e292d78650baff5b0736), --no-discover with exactly those 2 sessions; kit check ok=true, failed=[].
+- Live status verified ~10:55 WIB: "checked, outcome not decided yet" — all server checks pass (account_wallet, competition_open, quota, form, entry_signature, repo_owner, repo_public, license_osi, repo_created_after_open). Grading queued behind (server backlog, poll again in 5 min, do NOT resubmit). Blind rounds: no score/rank until results published (16 Dec).
+- Claim code saved only to ~/.config/makefun/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162-submission.json (0600).
