@@ -55,3 +55,12 @@ promotion premise; #3's turn is a shrug rather than a punchline.
 
 ## Live score / rank
 - Blind rounds: no live score until results. (Fill after submit + rounds.)
+
+## v2 (25 Nov 2026 ~10:20 WIB, on Joni's "Buat v2 ketiganya")
+- R2 result: #1324/2931, 55.56% — best of the batch; v1's specific-scene structure (meeting → email → follow-up) is what worked. No judge reasons (blind rounds).
+- v2 line (90 chars, Python len): "Dave from accounting replied-all to 214 people to say 'Please remove me from this thread'."
+- ONE specific detail: Dave from accounting + 214 people — a proper noun and a number, a concrete scene no other entry has.
+- Changes: JOKE swapped; added validate() (1-200 chars, not blank, one line, no control chars, at least one letter/digit) + read-back self-check + ENTRY_OUTPUT env; 3 new tests (8/8 pass).
+- Entry commit 276d04709f4ebd7223846777f17b875400287ad7, main, pushed, ls-remote verified.
+- Bundle ~/workspace/tools/makefun/bundles/u-pucuys-one-line-office-joke-24-hour-sprint-aaf86162-v2.tar.gz (253,899 B; sessions 74d993f7 + fix session 3c575f98, 1 usage row — the v1 builder's; fix session's row attaches on re-bundle before submit).
+- Kit check ok=true, failed=[] (fresh kit level 42; reproduces 203/219 = 92.6%, revised pass (3 messages), in_window pass, priced pass). NOT submitted — awaiting Joni's 'Setuju' on this exact v2.
