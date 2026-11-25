@@ -59,6 +59,32 @@ class TestEntry(unittest.TestCase):
         self.assertNotIn("import requests", source)
         self.assertNotIn("import numpy", source)
 
+    def test_v2_line_exact(self):
+        self.run_main()
+        with open(OUT, encoding="utf-8") as f:
+            text = f.read()
+        self.assertEqual(
+            text,
+            "Dave from accounting replied-all to 214 people to say "
+            "'Please remove me from this thread'.\n",
+        )
+
+    def test_v2_line_length_and_detail(self):
+        line = (
+            "Dave from accounting replied-all to 214 people to say "
+            "'Please remove me from this thread'."
+        )
+        self.assertEqual(len(line), 90)
+        self.assertIn("Dave from accounting", line)
+        self.assertIn("214", line)
+
+    def test_validate_rejects_punctuation_only(self):
+        sys.path.insert(0, REPO)
+        import main as entry
+
+        with self.assertRaises(ValueError):
+            entry.validate("!!!")
+
 
 if __name__ == "__main__":
     unittest.main()
